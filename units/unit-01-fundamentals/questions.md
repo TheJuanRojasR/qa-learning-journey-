@@ -106,3 +106,31 @@ Read the question out loud, answer it out loud in English, then check.
 **Q: Is the root cause always a fact?**
 
 **A:** No. It is a hypothesis, and it has to be validated: if I correct this, do the symptoms stop appearing? If they don't, the hypothesis is wrong.
+
+---
+
+## 6. Testing vs Debugging
+
+**Q: What is the difference between testing and debugging?**
+
+**A:** Testing finds failures and gives information about quality and risk — it does not fix anything. Debugging locates, analyzes and corrects the cause of a failure in the code. Testing finds; debugging fixes.
+
+**Q: Who does each one?**
+
+**A:** Testing is done by the tester / QC. Debugging is usually done by the developer — but it depends on where the defect lives: if it is in the requirement, the PO fixes it; if it is in the data, the data is fixed; if it is in the code, the developer fixes it.
+
+**Q: What comes after the developer says "it's fixed"?**
+
+**A:** Retesting: running that same test case again to confirm the failure no longer happens. "It's fixed" is not evidence — the evidence is the retesting.
+
+**Q: Is debugging the same as testing while looking at the code?**
+
+**A:** No. Debugging starts after something failed. Testing is what finds it in the first place. The border is not the hat you wear — it is the objective.
+
+**Q: Why shouldn't the same person fix the bug and validate the fix?**
+
+**A:** Because then nobody controls anybody: the fix certifies itself. It is the same problem as an inspector who also does the repairs.
+
+**Q: Does retesting confirm that everything still works?**
+
+**A:** No. Retesting confirms that specific case. Checking that everything else still works is a different activity, called regression testing.
