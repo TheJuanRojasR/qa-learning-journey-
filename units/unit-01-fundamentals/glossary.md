@@ -44,3 +44,11 @@ Glosario centralizado de la Unidad 1. Cada bloque corresponde a una nota de `not
 - `testing` — encontrar fallas y dar información; no arregla.
 - `debugging` — localizar, analizar y corregir la causa de un `failure` en el código.
 - `retesting` / `confirmation testing` — volver a ejecutar el mismo caso tras la corrección.
+
+## Test Objective
+
+*from `notes/07-test-objective.md`*
+
+- `test objective` — la razón o el propósito de una prueba: la **pregunta** que quieres poder contestar cuando termines.
+- `test scenario` — el **qué** se prueba. *(próximo concepto)*
+- `test case` — el **cómo** se prueba: pasos, datos y resultado esperado. *(próximo concepto)*

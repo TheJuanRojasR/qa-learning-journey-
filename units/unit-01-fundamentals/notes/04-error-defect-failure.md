@@ -47,3 +47,5 @@ Un `defect` puede existir y no manifestarse nunca (código muerto, ramas inalcan
 - `error`: la instructora no explicitó que un equipo completo (torre + monitor + mouse) es una unidad; yo no lo documenté en la US/UC; el dev asumió y no preguntó. → TRES `error`.
 - `defect`: en el requisito (la US/UC no define la agrupación) y en el modelo de datos (cada parte es un ítem independiente, sin agrupación).
 - `failure`: en Préstamos, registro el préstamo del equipo completo y el sistema solo registra la torre; el monitor y el mouse siguen apareciendo como disponibles en el área.
+
+- Un defect es algo que quedó mal escrito o que falta en un artefacto, como consecuencia del error de una persona — y ese 'algo' cambia según el artefacto. El error PASA. El defect QUEDA.

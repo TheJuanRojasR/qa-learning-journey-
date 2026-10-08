@@ -134,3 +134,31 @@ Read the question out loud, answer it out loud in English, then check.
 **Q: Does retesting confirm that everything still works?**
 
 **A:** No. Retesting confirms that specific case. Checking that everything else still works is a different activity, called regression testing.
+
+---
+
+## 7. Test Objective
+
+**Q: What is a test objective?**
+
+**A:** It is the reason or the purpose for which you are doing a test. It answers a very basic question: "What do we want to achieve or demonstrate by running this test?" It is the WHY — not the what (scenario) and not the how (case).
+
+**Q: How do you know if a test objective is good?**
+
+**A:** If you can write it as a question that can actually be answered, and if you know when you are done.
+
+**Q: What is the formula to write one?**
+
+**A:** Action verb + which component or flow + under which condition or rule. For example: "Verify that the exported inventory file keeps the same data as the screen, with 200 items loaded."
+
+**Q: What is the difference between a test objective, a test scenario and a test case?**
+
+**A:** The objective is WHY we test — the question we want to answer. The scenario is WHAT we test — the area or flow. The case is HOW we test it — the steps, the data and the expected result.
+
+**Q: Give an example of a bad test objective and fix it.**
+
+**A:** Bad: "Test the photo upload so it works." Fixed: "Validate that the system rejects a photo larger than 2 MB without crashing." A good objective targets the risk, not just the happy path.
+
+**Q: Why is "everything works correctly" not a test objective?**
+
+**A:** Because it gives no direction. It is like saying the objective of building a building is "that it doesn't fall down". It is not a question that can be answered, and it does not tell you when you are done.
