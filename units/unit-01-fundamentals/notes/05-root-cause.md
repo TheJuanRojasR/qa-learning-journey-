@@ -48,6 +48,29 @@ La raíz no es "el cocinero es un descuidado". Es que no hay ningún paso de con
 
 > Si hubiera sido que yo me olvidé una vez, no habría pasado en tres pantallas. Pasó tres veces porque **el paso no existe**.
 
+### Cómo se escribe la hipótesis
+
+> **"El [síntoma] vuelve porque [causa del proceso]."**
+
+La causa del proceso suele ser **el paso que NO existe** (o la regla que siempre se salta).
+
+- "Las notificaciones se rompen distinto en cada release **porque no existe el paso de probarlas antes de publicar**."
+- "El nombre de la categoría no se puede reusar **porque no existe el paso de definir qué pasa con los datos borrados, antes de codear**."
+
+**Regla de oro:** una hipótesis sirve solo si puede **fallar**. "El módulo es problemático" no se puede probar; "no existe el paso X" sí.
+
+### Cómo se valida
+
+1. **Cambiar y mirar:** agrego el paso/control y observo los próximos releases. ¿El síntoma dejó de aparecer? → se sostiene. ¿Volvió con el paso puesto? → la hipótesis estaba mal.
+2. **Mirar el histórico:** busco un caso donde el problema **no** pasó y chequeo si el paso existía ese día.
+
+Idealmente, las dos.
+
+**Ejemplos:**
+
+- *Acta sin firma:* "el acta solo se envía cuando el coordinador la aprueba" y miro los próximos 3 cierres: si ninguna sale sin firma → se sostiene; si una vuelve a salir sin firma → la hipótesis era otra.
+- *Despliegues de los viernes:* "antes de producción, desplegar en un entorno igual a producción y validar el comportamiento" y miro los próximos despliegues. Y de paso, el histórico: busco un despliegue donde **no** falló y chequeo si ese día se usó el entorno de prueba.
+
 ### Important Limit
 
 - La `root cause` es una **HIPÓTESIS**, no un hecho. Se valida: ¿si corrijo esto, dejan de aparecer los síntomas?
