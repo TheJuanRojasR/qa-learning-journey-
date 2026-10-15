@@ -1,7 +1,11 @@
-.atl
+# --- Privado / interno (NO subir) ---
+.atl/
+.opencode/
+/docs/
+/log/
+/courses/
+/vocabulary.md
 
-.opencode
-
-/docs
-
-/log
+# --- Secretos (prevención) ---
+.env
+.env.*
