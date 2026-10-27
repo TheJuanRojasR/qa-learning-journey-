@@ -3,8 +3,12 @@
 .opencode/
 /docs/
 /log/
-/courses/
 /vocabulary.md
+
+# --- Cursos: material privado (copyright / binarios) ---
+courses/**/material/
+courses/**/progress.md
+courses/**/vocabulary.md
 
 # --- Secretos (prevención) ---
 .env
