@@ -31,7 +31,7 @@ Y mi prueba termina cuando puedo contestar esa pregunta con evidencia — no cua
 | | | |
 |---|---|---|
 | **Objetivo** | ¿**Para qué**? | Quiero saber si al dar de baja a un instructor sus elementos quedan sin responsable |
-| **Escenario** | ¿**Qué**? | La baja de un instructor con elementos pendientes |
+| **Escenario** | ¿En qué situación compruebo la pregunta? | Se da de baja a un instructor que todavía tiene elementos pendientes |
 | **Caso** | ¿**Cómo**? | Doy de baja al instructor X, que tiene 3 elementos, y miro qué pasa |
 
 ### The Rule I Keep

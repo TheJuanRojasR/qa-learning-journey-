@@ -151,9 +151,9 @@ Read the question out loud, answer it out loud in English, then check.
 
 **A:** Action verb + which component or flow + under which condition or rule. For example: "Verify that the exported inventory file keeps the same data as the screen, with 200 items loaded."
 
-**Q: What is the difference between a test objective, a test scenario and a test case?**
+**Q: [CORRECTION 2026-10-20] What is the difference between a test objective and a test scenario?**
 
-**A:** The objective is WHY we test — the question we want to answer. The scenario is WHAT we test — the area or flow. The case is HOW we test it — the steps, the data and the expected result.
+**A:** A `test objective` states the purpose or question the test aims to answer. A `test scenario` describes a concrete situation or flow in which that question is examined. Example: objective — “Does the system block a loan when the asset is in maintenance?”; scenario — “An authorized administrator attempts to loan an asset whose current status is Maintenance.”
 
 **Q: Give an example of a bad test objective and fix it.**
 
@@ -162,3 +162,19 @@ Read the question out loud, answer it out loud in English, then check.
 **Q: Why is "everything works correctly" not a test objective?**
 
 **A:** Because it gives no direction. It is like saying the objective of building a building is "that it doesn't fall down". It is not a question that can be answered, and it does not tell you when you are done.
+
+---
+
+## 8. Test Scenario
+
+**Q: What is a test scenario?**
+
+**A:** It is a high-level description of a concrete situation or flow in which a test objective is examined. It describes the relevant context, not the purpose of the test.
+
+**Q: What question distinguishes a test scenario from a test objective?**
+
+**A:** A test objective answers “What do I want to find out?” A test scenario answers “Under what situation do I examine it?”
+
+**Q: Can one test objective have more than one test scenario?**
+
+**A:** Yes. The objective can stay the same while relevant conditions change. Changing only an irrelevant identifier does not necessarily create a different scenario.
